@@ -17,6 +17,7 @@ namespace SolarDataManagement
         public frmMDIMain()
         {
             InitializeComponent();
+            // test comment to trigger sync/push with github
         }
 
         private void ShowNewForm(object sender, EventArgs e)

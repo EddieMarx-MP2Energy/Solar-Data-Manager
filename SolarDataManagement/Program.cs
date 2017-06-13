@@ -17,6 +17,7 @@ namespace SolarDataManagement
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmMDIMain());
+            // test comment to trigger sync/push with github
         }
     }
 }
