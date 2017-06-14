@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SolarDataManager;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,19 +13,22 @@ namespace SolarDataManagement
 {
     public partial class frmMDIMain : Form
     {
-        private int childFormNumber = 0;
+        private int childFormNumber = 1;
 
         public frmMDIMain()
         {
+            // please reference the link below which was the source of the datagrid extended control
+            // https://www.codeproject.com/Articles/195423/DataGridViewExtension
+
             InitializeComponent();
-            // test comment to trigger sync/push with github
         }
 
         private void ShowNewForm(object sender, EventArgs e)
         {
-            Form childForm = new Form();
+            //Form childForm = new Form();
+            Form childForm = new Form2();
             childForm.MdiParent = this;
-            childForm.Text = "Window " + childFormNumber++;
+            childForm.Text = "Prospect Grid " + childFormNumber++;
             childForm.Show();
         }
 
